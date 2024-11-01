@@ -1,0 +1,61 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+    background: url(img/pemandangan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.65;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+/* Latihan */
+.container-satu{
+    width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+/* Styling untuk sidebar satu */
+.sidebar-satu {
+    flex: 1; /* Mengambil 1 bagian dari ruang tersedia */
+    order: 1; /* Urutan elemen dalam flex container */
+    padding: 9px;
+    background-color: rgba(206, 169, 228, 0.5); */
+    .link{
+        font-size: 15pt;
+    }
+    .link:hover{
+        color: red;
+    }
+    .link:link{
+        color: blue;
+    }
+    /* Mengubah warna link menajdi ungu muda setelah dikunjungi */
+     .link:visited{
+        color: rgb(212, 0, 255);
+    }
+}
+
+/* Styling untuk kolom utama */
+.kolom-utama {
+    flex: 2; /* Mengambil 2 bagian dari ruang tersedia */
+    order: 2; /* Urutan elemen dalam flex container */
+    margin-right: 1 20px;
+}
+
+/* Styling untuk sidebar dua */
+.sidebar-dua {
+    flex: 1; /* Mengambil 1 bagian dari ruang tersedia */
+    order: 3; /* Urutan elemen dalam flex container */
+    padding: 10px;
+}

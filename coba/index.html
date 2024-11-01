@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pilihan Warna</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Form Pilihan Warna</h2>
+        <form id="colorForm" action="process.php" method="POST">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="colors">Pilih Warna Favorit:</label>
+            <select id="colors" name="colors[]" multiple required>
+                <option value="Merah">Merah</option>
+                <option value="Biru">Biru</option>
+                <option value="Hijau">Hijau</option>
+                <option value="Kuning">Kuning</option>
+                <option value="Hitam">Hitam</option>
+            </select>
+
+            <button type="submit" id="submitBtn">Pilih</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
